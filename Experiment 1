@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vegetables and Fruits</title>
+
+    <style>
+
+        /* Page Background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            color: #4a4a4a;
+
+            background: linear-gradient(
+                135deg,
+                #f7efe5,
+                #eaf3ee,
+                #f3eaf5
+            );
+
+            min-height: 100vh;
+        }
+
+        /* Student Information - Top Right */
+        .student-info {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background-color: #eee5f3;
+            padding: 10px 16px;
+            border-radius: 10px;
+            text-align: right;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .student-info p {
+            margin: 4px 0;
+            color: #5c5470;
+            font-size: 14px;
+        }
+
+        .student-info .name {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /* Main Container */
+        .container {
+            width: 850px;
+            max-width: 90%;
+            margin: 80px auto 0;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            background-color: #e8e0f2;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .header h1 {
+            color: #5c5470;
+            margin: 0;
+        }
+
+        .header p {
+            color: #756b82;
+        }
+
+        /* Lists Container */
+        .lists {
+            display: flex;
+            gap: 25px;
+        }
+
+        /* List Boxes */
+        .list-box {
+            width: 50%;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Vegetable Box */
+        .vegetables {
+            background-color: #e5f1e2;
+        }
+
+        .vegetables h2 {
+            color: #557a55;
+        }
+
+        /* Fruit Box */
+        .fruits {
+            background-color: #fbe4e4;
+        }
+
+        .fruits h2 {
+            color: #a65d66;
+        }
+
+        /* List Items */
+        li {
+            margin: 8px;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #4a4a4a;
+            display: block;
+            padding: 5px;
+        }
+
+        /* Vegetable Hover */
+        .vegetables li:hover {
+            background-color: #cfe5ca;
+        }
+
+        /* Fruit Hover */
+        .fruits li:hover {
+            background-color: #f5cccc;
+        }
+
+        /* Information Container */
+        .information {
+            margin-top: 30px;
+        }
+
+        /* Individual Information Box */
+        .item {
+            display: none;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            background-color: #fff3d6;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Display Selected Item */
+        .item:target {
+            display: block;
+        }
+
+        .item h2 {
+            color: #806b3f;
+        }
+
+        .item img {
+            width: 280px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 4px solid white;
+        }
+
+        .item p {
+            max-width: 650px;
+            margin: 15px auto;
+            line-height: 1.6;
+            color: #665f50;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 700px) {
+
+            .student-info {
+                position: relative;
+                top: auto;
+                right: auto;
+                width: fit-content;
+                margin-left: auto;
+                margin-bottom: 20px;
+            }
+
+            .container {
+                margin-top: 20px;
+            }
+
+            .lists {
+                flex-direction: column;
+            }
+
+            .list-box {
+                width: auto;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Student Name and Registration Number -->
+    <div class="student-info">
+        <p class="name">Name:Nimeshika</p>
+        <p>Registration No:24K61A1216</p>
+    </div>
+
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <h1>🌱 Vegetables & Fruits 🍎</h1>
+
+            <p>
+                Click on any vegetable or fruit to view its image and description.
+            </p>
+
+        </div>
+
+
+        <!-- Lists -->
+        <div class="lists">
+
+            <!-- Vegetables -->
+            <div class="list-box vegetables">
+
+                <h2>🥕 Vegetables</h2>
+
+                <ol>
+
+                    <li>
+                        <a href="#carrot">Carrot</a>
+                    </li>
+
+                    <li>
+                        <a href="#potato">Potato</a>
+                    </li>
+
+                    <li>
+                        <a href="#tomato">Tomato</a>
+                    </li>
+
+                    <li>
+                        <a href="#spinach">Spinach</a>
+                    </li>
+
+                    <li>
+                        <a href="#cabbage">Cabbage</a>
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+            <!-- Fruits -->
+            <div class="list-box fruits">
+
+                <h2>🍎 Fruits</h2>
+
+                <ul>
+
+                    <li>
+                        <a href="#apple">Apple</a>
+                    </li>
+
+                    <li>
+                        <a href="#banana">Banana</a>
+                    </li>
+
+                    <li>
+                        <a href="#mango">Mango</a>
+                    </li>
+
+                    <li>
+                        <a href="#orange">Orange</a>
+                    </li>
+
+                    <li>
+                        <a href="#grapes">Grapes</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Information -->
+
+        <div class="information">
+
+            <!-- Carrot -->
+            <div id="carrot" class="item">
+
+                <h2>🥕 Carrot</h2>
+
+                <img src="https://images.unsplash.com/photo-1445282768818-728615cc910a?w=600"
+                     alt="Carrot">
+
+                <p>
+                    Carrot is a root vegetable rich in beta-carotene,
+                    vitamins and dietary fiber. It can be eaten raw or cooked.
+                </p>
+
+            </div>
+
+
+            <!-- Potato -->
+            <div id="potato" class="item">
+
+                <h2>🥔 Potato</h2>
+
+                <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=600"
+                     alt="Potato">
+
+                <p>
+                    Potato is a starchy vegetable commonly used in fries,
+                    curries, chips and many other dishes.
+                </p>
+
+            </div>
+
+
+            <!-- Tomato -->
+            <div id="tomato" class="item">
+
+                <h2>🍅 Tomato</h2>
+
+                <img src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=600"
+                     alt="Tomato">
+
+                <p>
+                    Tomato is a juicy vegetable commonly used in salads,
+                    sauces and curries. It is a good source of vitamin C.
+                </p>
+
+            </div>
+
+
+            <!-- Spinach -->
+            <div id="spinach" class="item">
+
+                <h2>🥬 Spinach</h2>
+
+                <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=600"
+                     alt="Spinach">
+
+                <p>
+                    Spinach is a leafy green vegetable containing iron,
+                    vitamins and antioxidants. It can be eaten raw or cooked.
+                </p>
+
+            </div>
+
+
+            <!-- Cabbage -->
+            <div id="cabbage" class="item">
+
+                <h2>🥬 Cabbage</h2>
+
+                <img src="https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?w=600"
+                     alt="Cabbage">
+
+                <p>
+                    Cabbage is a leafy vegetable commonly used in salads,
+                    soups, curries and stir-fried dishes.
+                </p>
+
+            </div>
+
+
+            <!-- Apple -->
+            <div id="apple" class="item">
+
+                <h2>🍎 Apple</h2>
+
+                <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=600"
+                     alt="Apple">
+
+                <p>
+                    Apple is a crunchy and sweet fruit that contains
+                    dietary fiber and vitamin C. It is commonly eaten fresh.
+                </p>
+
+            </div>
+
+
+            <!-- Banana -->
+            <div id="banana" class="item">
+
+                <h2>🍌 Banana</h2>
+
+                <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=600"
+                     alt="Banana">
+
+                <p>
+                    Banana is a soft and sweet fruit that is a good source
+                    of potassium and carbohydrates.
+                </p>
+
+            </div>
+
+
+            <!-- Mango -->
+            <div id="mango" class="item">
+
+                <h2>🥭 Mango</h2>
+
+                <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=600"
+                     alt="Mango">
+
+                <p>
+                    Mango is a sweet tropical fruit with juicy flesh.
+                    It is popular for its delicious taste and nutritional value.
+                </p>
+
+            </div>
+
+
+            <!-- Orange -->
+            <div id="orange" class="item">
+
+                <h2>🍊 Orange</h2>
+
+                <img src="https://images.unsplash.com/photo-1547514701-42782101795e?w=600"
+                     alt="Orange">
+
+                <p>
+                    Orange is a refreshing citrus fruit that is especially
+                    well known for its vitamin C content.
+                </p>
+
+            </div>
+
+
+            <!-- Grapes -->
+            <div id="grapes" class="item">
+
+                <h2>🍇 Grapes</h2>
+
+                <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=600"
+                     alt="Grapes">
+
+                <p>
+                    Grapes are small, juicy fruits that grow in bunches.
+                    They can be eaten fresh or used to make juice and raisins.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
